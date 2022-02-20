@@ -1,0 +1,29 @@
+<body style="background-color:grey;">
+<form action="LoginServlet" method="post"> 
+<div>
+	<p>
+	<label for=name><b>Username:</b></label>
+	<input type="text" placeholder="Enter Username" name="name" required>
+	</p>
+	<p>
+	<label for=password><b>Password:</b></label>
+	<input type="password" placeholder="Enter Password" name="password" id="password" required>
+	<img src="Daco_4342327.png" style="margin-left: -25px; display:inline; vertical-align: middle; height:14px;" id="togglePassword">
+	</p>
+    <input type="submit" value="login">
+</div>
+</form>
+<script>
+	const togglePassword = document.querySelector("#togglePassword");
+	const password = document.querySelector("#password");
+	togglePassword.addEventListener("click", function() {
+		const type = password.getAttribute("type") === "password" ? "text" : "password";
+		password.setAttribute("type", type);
+		if (togglePassword.src.match("Daco_4342327.png")) {
+			togglePassword.src = "https://media.geeksforgeeks.org/wp-content/uploads/20210917145551/eye.png";
+		} else {
+		    togglePassword.src = "Daco_4342327.png";
+		}
+	});
+</script> 
+</body>
