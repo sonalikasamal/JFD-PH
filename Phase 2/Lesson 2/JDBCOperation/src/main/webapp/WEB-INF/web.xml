@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <display-name>JDBCOperation</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+ <servlet>
+    <servlet-name>DBOperations</servlet-name>
+    <servlet-class>com.ecommerce.connectivity.DBOperations</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DBOperations</servlet-name>
+    <url-pattern>/DBOperations</url-pattern>
+  </servlet-mapping>
+
+</web-app>
