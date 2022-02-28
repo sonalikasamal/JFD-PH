@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	input[type=text], input[type=tel] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-sizing: border-box;
+	}
+	input[type=button] {
+		width: 100%;
+		background-color: coral;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	div {
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding: 20px;
+		width: 30%;
+		margin: auto;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<h6 style="margin: 0;">CREDIT/DEBIT CARD PAYMENT</h6>
+		<img src="https://img.icons8.com/color/36/000000/visa.png">
+		<img src="https://img.icons8.com/color/36/000000/mastercard.png">
+		<img src="https://img.icons8.com/color/36/000000/amex.png">
+	</div>
+	<div class="card-body" style="height: 350px">
+		<label for="cc-number" class="control-label">CARD NUMBER</label>
+		<input id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="- - - - /- - - - /- - - - /- - - -" required>
+		<label for="cc-exp" class="control-label">CARD EXPIRY</label>
+		<input id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="- - / - -" required>
+		<label for="cc-cvc" class="control-label">CARD CVV</label>
+		<input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="- - -" required>
+		<label for="numeric" class="control-label">CARD HOLDER NAME</label>
+		<input type="text" class="input-lg form-control">
+		<a href=VerifyCode.jsp><input value="MAKE PAYMENT" type="button" style="font-size: .8rem;"></a>
+	</div>
+</body>
+</html>
