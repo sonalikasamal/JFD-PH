@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Ming's Dinner</title>
+  </head>
+  <body>
+    <header class="home_banner">
+      <nav class="navbar navbar-expand-lg navbar-light bg">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"><img src="./Images/Ming's-Dinner.png" alt="logo" class="img-fluid logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto text-center">
+              <a class="nav-link custom-nav-link" href="./index.html">Home</a>
+              <a class="nav-link custom-nav-link" href="#about">About Us</a>
+              <a class="nav-link custom-nav-link" href="#bestsellers">BestSeller</a>
+              <a class="nav-link custom-nav-link" href="#contact">Contact Us</a>
+              <a class="nav-link custom-nav-link custom-nav" href="./menu.html">Our Menu</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section id="banner-sec">
+        <div class="container-fluid px-0">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 pt-5 pb-5 mt-5 mb-5">
+                <h1 class="text-white">Food that you can't resist</h1>
+                <h4 class="text-white">Enjoy the marvelous taste</h4>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam qui maxime voluptatibus, tenetur temporibus, expedita, blanditiis ratione voluptate est libero quasi itaque at dicta vitae facilis delectus eum? Praesentium nesciunt nulla consectetur ad molestias sit vero velit magnam, dicta exercitationem qui aliquam incidunt aliquid ea asperiores quae dolorum ab nemo!</p>
+                <div class="mt-4 mb-4 pb-4">
+                  <button class="order-btn">Take Away</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section id="about" class="mt-5 pt-5">
+      <div class="container">
+        <div class="row align-item-center">
+          <div class="col-md-6 mb-5">
+            <div class="card border-0">
+              <img src="./Images/about-us.avif" class="img-fluid about-img">
+            </div>
+          </div>
+          <div class="col-md-6 mt-lg-4 pt-lg-3">
+            <h2 class="text-center">Welcome To Ming's Dinner</h2><br>
+            <p style="text-align: justify; font-weight: 600;">Ming's Dinner brand has its origins in a small canteen and a cafe in a cinema theatre called Inox in Hyderabad in the Year 1999.<br><br>A small 100-seater restaurant started serving typical Hyderabadi cuisine like Biryani etc. from early 20s. The cafe also used to sell general food items to the people as a one-stop food store.<br><br>Now Ming's Dinner expanded it operations in more than 11 cities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bestsellers">
+      <div class="bestsellers wrapper mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="text-center">
+                <h2>Our BestSellers</h2>
+                <p style="font-weight: 600;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate molestiae reiciendis aliquam explicabo sunt ducimus quo fugit provident animi sequi!</p>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-2">
+            <div class="col-md-3">
+              <div class="card">
+                <img src="./Images/biryani.jpg" alt="" class="img-fluid">
+                <div class="pt-3">
+                  <h4>Chicken Biryani</h4>
+                  <span>$20<del>$25</del></span>
+                  <button class="mt-4 order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="./Images/burger.jpg" alt="" class="img-fluid">
+                <div class="pt-3">
+                  <h4>Burger</h4>
+                  <span>$10<del>$11</del></span>
+                  <button class="mt-4 order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="./Images/chicken-salad.jpg" alt="" class="img-fluid">
+                <div class="pt-3">
+                  <h4>Chicken Salad</h4>
+                  <span>$10<del>$12</del></span>
+                  <button class="mt-4 order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="./Images/momos.jpg" alt="" class="img-fluid">
+                <div class="pt-3">
+                  <h4>Paneer Momo</h4>
+                  <span>$15<del>$16</del></span>
+                  <button class="mt-4 order-btn">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="container mt-5 mb-5">
+      <h2 class="text-center mt-5 mb-5">CONTACT US</h2>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <form method="post" data-form-title="CONTACT US">
+            <input type="hidden" data-form-email="true">
+            <div class="form-group row">
+              <div class="col-md-6">
+                <label for="fname">First Name*</label>
+                <input type="text" class="form-control" name="fname" required="" placeholder="Enter your firstname" data-form-field="fName">
+              </div>
+              <div class="col-md-6">
+                <label for="lname">Last Name*</label>
+                <input type="text" class="form-control" name="lname" required="" placeholder="Enter your lastname" data-form-field="lName">
+              </div>
+              </div><br>
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" class="form-control" name="email" required="" placeholder="Enter your email" data-form-field="Email">
+            </div><br>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" class="form-control" name="phone" placeholder="Enter your phone" data-form-field="Phone">
+            </div><br>
+            <div class="form-group">
+              <label for="message">Message*</label>
+              <textarea class="form-control" name="message" placeholder="Message" rows="4" data-form-field="Message"></textarea>
+            </div><br>
+            <div>
+              <button class="contact-btn">CONTACT US</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </section>
+    <footer class="container-fluid">
+      <div class="container pt-5">
+        <div class="row pb-5">
+          <div class="col-md-3 footer-column">
+            <div class="flex-column">
+              <img src="./Images/Ming's-Dinner.png" alt="footer-logo" class="img-fluid logo"><br>
+            </div>
+          </div>
+          <div class="col-md-3 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Company</span>
+              </li><br>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Prices</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bestsellers">Our BestSellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">News and Articles</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Support</span>
+              </li><br>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Terms & Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-column">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span class="footer-title">Address</span>
+              </li><br>
+              <li class="nav-item">
+                <span class="nav-link">622 South Church Street, Unit 2C<br>
+                George Town, PO Box 31258,<br>
+                Bhadrak,<br>
+                Odisha, KY1-1206</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="text-white">
+        <div class="row">
+          <div class="col-md-12">
+            <h6 class="text-white text-center">&copy; 2022 Ming's Dinner - All Rights Reserved</h6>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
