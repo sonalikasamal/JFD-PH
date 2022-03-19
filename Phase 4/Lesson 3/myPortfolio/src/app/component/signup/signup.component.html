@@ -1,0 +1,19 @@
+<div class="wrapper">
+   <h2>Please <span>Register</span> Yourself</h2>
+   <div class="block">
+      <form [formGroup]="register">
+         <label for="fname">First Name:</label>
+         <input type="text" placeholder="Enter your first name" class="inp" formControlName="name"/>
+         <label for="lname">Last Name:</label>
+         <input type="text" placeholder="Enter your last name" class="inp" formControlName="name"/>
+         <label for="email">Email:</label>
+         <input type="text" placeholder="Enter your email" class="inp" formControlName="email"/>
+         <label for="pswd">Password:</label>
+         <input type="password" placeholder="Enter your password" class="inp" formControlName="name"/>
+         <p>Have an account?<button (click)="goToLogin()" class="btn">Log In</button></p>
+         <div class="btns">
+         <button (click)="registerSubmit(register.value)" [disabled]="!register.valid" class="signup-btn">Signup</button>
+         </div>
+     </form>
+  </div>
+</div>

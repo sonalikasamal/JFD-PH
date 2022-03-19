@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <h2><span>Welcome!</span></h2>
+    <h4>Sign in to your account</h4>
+     <div class="block">
+        <form [formGroup]="login">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name" class="inp" formControlName="name"/>
+            <label for="email">Email:</label>
+            <input type="text" placeholder="Enter your email" class="inp" formControlName="email"/>
+            <p>Don't have an account?<button (click)="goToRegister()" class="btn">Register</button></p>
+            <div class="btns">
+            <button (click)="loginForm(login.value)" [disabled]="!login.valid" class="signin-btn">Sign In</button>
+            </div>
+        </form>
+     </div>
+</div>
